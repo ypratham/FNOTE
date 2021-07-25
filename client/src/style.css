@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  padding: 0 16px;
+  background-color: #3c00ab;
+  background-image: url("https://www.transparenttextures.com/patterns/escheresque.png");
+  overflow: hidden;
+}
+
+header {
+  background-color: #2980b9;
+  margin: auto -16px;
+  padding: 16px 32px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+  color: #fff;
+  font-weight: 200;
+}
+
+footer {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+
+footer p {
+  color: #ccc;
+}
+
+.homepage {
+  height: 100%;
+  padding-top: 10%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.homepage h1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 3rem;
+  color: white;
+}
+
+.homepage div {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+.homepage Button {
+  margin: 20px;
+  font-size: 1.6rem;
+}
+
+.note {
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 10px;
+  width: 240px;
+  margin: 16px;
+  float: left;
+}
+.note h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1em;
+  margin-bottom: 6px;
+}
+.note p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.deleteIcon {
+  position: relative;
+  float: right;
+  margin-right: 10px;
+  color: #f5ba13;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+.deleteIcon:hover {
+  color: black;
+}
+
+form {
+  position: relative;
+  width: 480px;
+  margin: 30px auto 20px auto;
+  background: #fff;
+  padding: 15px;
+  border-radius: 7px;
+  box-shadow: 0 1px 5px rgb(138, 137, 137);
+}
+form input,
+form textarea {
+  font-family: "Open Sans", sans-serif;
+  width: 100%;
+  border: none;
+  padding: 4px;
+  outline: none;
+  font-size: 1.2em;
+  font-family: inherit;
+  resize: none;
+}
+
+form .addButton {
+  font-size: 1.5rem;
+  font-weight: bold;
+  position: absolute;
+  right: 18px;
+  bottom: -18px;
+  background: #2980b9;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Error message */
+.addPopup {
+  width: max-content;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 35%;
+  left: 41%;
+}
+.addPopup h1 {
+  margin-top: 10px;
+  width: 200px;
+  font-size: 1.5rem;
+}
+.errorIcon {
+  color: red;
+}
+.popUp {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.336);
+  width: 100vw;
+  height: 100vh;
+}
+.addPopup Button {
+  margin-top: 20px;
+}
